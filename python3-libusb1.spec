@@ -4,9 +4,9 @@
 
 Summary:	Pure-python wrapper for libusb-1.0
 Summary(pl.UTF-8):	Czysto pythonowy interfejs do libusb-1.0
-Name:		python-libusb1
+Name:		python3-libusb1
 Version:	3.0.0
-Release:	1
+Release:	2
 License:	LGPL v2.1+
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/libusb1/
@@ -19,6 +19,8 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	sed >= 4.0
 Requires:	python3-modules >= 1:3.4
+# python3-libusb1 3.0.0 by mistake was released as python-libusb1; last version with python2 support was 1.x
+Obsoletes:	python-libusb1 == 3.0.0-1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
