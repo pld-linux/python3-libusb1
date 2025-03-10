@@ -6,7 +6,7 @@ Summary:	Pure-python wrapper for libusb-1.0
 Summary(pl.UTF-8):	Czysto pythonowy interfejs do libusb-1.0
 Name:		python3-libusb1
 Version:	3.0.0
-Release:	2
+Release:	3
 License:	LGPL v2.1+
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/libusb1/
